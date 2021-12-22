@@ -1,6 +1,9 @@
 import {
     NavLink
 } from 'react-router-dom';
+
+import { Logout } from "../Logout"
+
 import "./styles.css";
 
 
@@ -15,6 +18,9 @@ export const Navbar = () => {
                 </li>
                 <li>
                     <NavLink activeClassName="nav-selected" to="/profile"> My Profile</NavLink>
+                </li>
+                <li>
+                    <Logout />
                 </li>
             </ul>
         </nav>
