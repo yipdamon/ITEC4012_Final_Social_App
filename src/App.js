@@ -7,6 +7,7 @@ import {
 import { Navbar } from './components/Navbar';
 import { HomePage } from './components/pages/HomePage';
 import { ProfilePage } from './components/pages/ProfilePage';
+import { LoginPage } from './components/pages/LoginPage';
 
 function App() {
   return (
@@ -20,9 +21,12 @@ function App() {
           <Route path="/profile">
             <ProfilePage />
           </Route>
-          {/* <Route path="/pet/:id">
+          <Route path="/pet/:id">
             <div>Individual Pet Details</div>
-          </Route> */}
+          </Route>
+          <Route path="/login">
+            <LoginPage/>
+          </Route>
         </Switch>
       </Router>
     </div>
