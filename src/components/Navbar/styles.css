@@ -16,6 +16,9 @@
 
 .navbar a {
     text-decoration: none;
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
 }
 
 .navbar a.nav-selected {
