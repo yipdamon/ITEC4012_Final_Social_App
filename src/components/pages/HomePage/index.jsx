@@ -6,7 +6,6 @@ import { SocialItem } from "../../SocialItem";
 import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import { useHistory } from "react-router";
 
-
 export const HomePage = () => {
 
   const [socials, setSocials] = useState([]);
@@ -34,29 +33,29 @@ export const HomePage = () => {
     }, []
   );
 
-const getSocials = async() => {
-  try {
-    const response = await fetch('https://firestore.googleapis.com/v1/projects/itec4012-final-a164f/databases/(default)/documents/socials/');
-    const data = await response.json();
-    //console.log(data);
-    const formattedData = data.documents.map( (item) => {
-      return item.fields
-    });
+  const getSocials = async() => {
+    try {
+      const response = await fetch('https://firestore.googleapis.com/v1/projects/itec4012-final-a164f/databases/(default)/documents/socials/');
+      const data = await response.json();
+      //console.log(data);
+      const formattedData = data.documents.map( (item) => {
+        return item.fields
+      });
 
-    //console.log (formattedData);
-    setSocials(formattedData);
-    globalState.initializeSocials(formattedData);
-    setLoading(false);
+      //console.log (formattedData);
+      setSocials(formattedData);
+      globalState.initializeSocials(formattedData);
+      setLoading(false);
 
-  } catch(err){
-    console.log (err)
-    setLoading(false);
+    } catch(err){
+      console.log (err)
+      setLoading(false);
+    }
   }
-}
 
   return (
     <div className="socials-page">
-      <h1 className="socials-title"> Posts </h1>
+      <h1 className="socials-title"> Global Posts </h1>
       <div className="socials-container">
       {
         socials.map((social) => (
