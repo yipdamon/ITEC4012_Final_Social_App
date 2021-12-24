@@ -22,9 +22,6 @@ function App() {
           <Route path="/profile">
             <ProfilePage />
           </Route>
-          <Route path="/pet/:id">
-            <div>Individual Pet Details</div>
-          </Route>
           <Route path="/login">
             <LoginPage/>
           </Route>
