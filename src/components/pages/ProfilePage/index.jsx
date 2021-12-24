@@ -83,10 +83,10 @@ export const ProfilePage = (props) => {
       return (
         <div className="socials-page">
             <h1 className="socials-title"> {email} </h1>
-            <div>
+            <div className="socials-container">
             {
               filteredSocials.map((social) => (
-                <SocialItem text={social.text.stringValue} user={social.user.stringValue} ></SocialItem>
+                <SocialItem image={social.image.stringValue} text={social.text.stringValue} user={social.user.stringValue} ></SocialItem>
               ))
             }
 

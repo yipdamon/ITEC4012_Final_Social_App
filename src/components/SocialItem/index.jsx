@@ -10,7 +10,7 @@ export const SocialItem = (props) => {
 
     return (
         <div className="social">
-            <img className="social-photo" src={image} alt={text + user + "photo"} />
+            <img className="social-photo" src={image} alt={user + "'s photo"} />
             <div className='social-text'>
                 <p className="social-user"> @{user} </p>
                 <p className="social-text"> {text} </p>
