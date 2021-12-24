@@ -82,7 +82,7 @@ export const ProfilePage = (props) => {
       const email = user.email;
       return (
         <div className="socials-page">
-            <h1 className="socials-title"> {email} </h1>
+            <h1 className="socials-title"> {email}'s Page </h1>
             <div className="socials-container">
             {
               filteredSocials.map((social) => (
