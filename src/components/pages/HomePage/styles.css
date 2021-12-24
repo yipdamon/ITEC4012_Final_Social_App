@@ -4,8 +4,9 @@
 
 .socials-container {
     display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
 }
 
 .socials-title{

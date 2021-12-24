@@ -17,7 +17,10 @@ export const Navbar = () => {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink activeClassName="nav-selected" to="/profile"> My Profile</NavLink>
+                    <NavLink activeClassName="nav-selected" to="/profile">My Profile</NavLink>
+                </li>
+                <li>
+                    <NavLink activeClassName="nav-selected" to="/new"> New Post </NavLink>
                 </li>
                 <li>
                     <Logout />

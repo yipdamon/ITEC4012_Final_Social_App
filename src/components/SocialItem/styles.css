@@ -1,14 +1,31 @@
 .social{
-    padding: 10px;
+    padding: 20px;
     background-color: rgba(218, 218, 218, 0.8);;
-    /* box-shadow: 0 3px 3px -1px rgba(0, 0, 0, 0.2); */
-    border: 1px solid #2f3336;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #757575;
+    display: flex;
+    border-radius: 50px;
+}
+
+.social-photo{
+    max-width: 20%;
+    border-radius: 40px;
 }
 
 .social-text{
-    color: #ff4040;
+    margin-left: auto;
 }
 
 .social-user{
-    color: #2d9ef5;
+    color: #757575;
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.social-text{
+    color: #000000;
+    margin-left: 20px;
+    font-size: 2rem;
 }
