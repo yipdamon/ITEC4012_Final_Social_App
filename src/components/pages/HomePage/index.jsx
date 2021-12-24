@@ -59,7 +59,7 @@ export const HomePage = () => {
       <div className="socials-container">
       {
         socials.map((social) => (
-          <SocialItem text={social.text.stringValue} user={social.user.stringValue} ></SocialItem>
+          <SocialItem image={social.image.stringValue} text={social.text.stringValue} user={social.user.stringValue} ></SocialItem>
         ))
       }
 
